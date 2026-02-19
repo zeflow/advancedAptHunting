@@ -518,8 +518,8 @@ Individual SMB flows can reveal intent.
 ### Starting Search
 
 ```spl
-sourcetype=stream:smb
-| stats values(filename) values(path) values(command) by flow_id src_ip dest_ip
+sourcetype=stream:smb src_ip IN (192.168.70.167,192.168.70.150) dest_ip IN (192.168.70.150,192.168.70.167)
+
 ```
 
 ---
