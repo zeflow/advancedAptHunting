@@ -110,7 +110,7 @@ Adversaries may abuse `wscript.exe` to execute JavaScript as part of execution o
 ### Starting Search
 
 ```spl
-WinEventLog:Microsoft-Windows-Sysmon/Operational" EventCode=1 CommandLine=*<insert string here>*
+source="WinEventLog:Microsoft-Windows-Sysmon/Operational" EventCode=1 CommandLine=*<insert string here>*
 
 ```
 
